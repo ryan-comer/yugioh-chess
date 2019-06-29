@@ -1465,6 +1465,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2881672188149896838, guid: 0e84d09f69f945a4da92e799ccfcdffc,
         type: 3}
+    - target: {fileID: 114369135389954138, guid: 8f467e0f0bc97d54e81a87f7b532ed9a,
+        type: 3}
+      propertyPath: knightTwo
+      value: 
+      objectReference: {fileID: 6939179185230933261, guid: fb912ede859e5bb418ae1afdca785bbe,
+        type: 3}
     - target: {fileID: 4080540918116648, guid: 8f467e0f0bc97d54e81a87f7b532ed9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
