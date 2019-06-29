@@ -146,7 +146,7 @@ public class ChessBoard : MonoBehaviour {
 		for (int i = 0; i < 8; i++) {
 			int x = i;
 			int y = 6;
-			ChessPiece newPawn = Instantiate (pawnOne, getSlot(x, y).transform.position, playerTwoLookRotation);
+			ChessPiece newPawn = Instantiate (pawnTwo, getSlot(x, y).transform.position, playerTwoLookRotation);
 			getSlot (x, y).currentPiece = newPawn;
 			newPawn.currentX = x;
 			newPawn.currentY = y;
@@ -163,7 +163,7 @@ public class ChessBoard : MonoBehaviour {
 		newRook.owner = 1;
 		activePieces.Add (newRook);
 
-		newRook = Instantiate (rookOne, getSlot (7, 7).transform.position, playerTwoLookRotation);
+		newRook = Instantiate (rookTwo, getSlot (7, 7).transform.position, playerTwoLookRotation);
 		getSlot (7, 7).currentPiece = newRook;
 		newRook.currentX = 7;
 		newRook.currentY = 7;
@@ -443,7 +443,7 @@ public class ChessBoard : MonoBehaviour {
 		bool kingAndRook = (pieceOne.pieceType == ChessPiece.PieceType.Rook && pieceTwo.pieceType == ChessPiece.PieceType.King) ||
 		                   (pieceOne.pieceType == ChessPiece.PieceType.King && pieceTwo.pieceType == ChessPiece.PieceType.Rook);
 		bool inCheck = checkForCheck (pieceOne.owner);
-		// No sace between pieces
+		// No space between pieces
 		// Check to the left
 		int pieceY = pieceOne.currentY;
 		if (pieceOne.currentX > pieceTwo.currentX) {

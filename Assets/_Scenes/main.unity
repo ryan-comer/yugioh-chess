@@ -1453,6 +1453,18 @@ PrefabInstance:
       propertyPath: gameController
       value: 
       objectReference: {fileID: 909922017}
+    - target: {fileID: 114369135389954138, guid: 8f467e0f0bc97d54e81a87f7b532ed9a,
+        type: 3}
+      propertyPath: queenTwo
+      value: 
+      objectReference: {fileID: 6297710685235237272, guid: f01fc1902a2275b46993425039951611,
+        type: 3}
+    - target: {fileID: 114369135389954138, guid: 8f467e0f0bc97d54e81a87f7b532ed9a,
+        type: 3}
+      propertyPath: pawnTwo
+      value: 
+      objectReference: {fileID: 2881672188149896838, guid: 0e84d09f69f945a4da92e799ccfcdffc,
+        type: 3}
     - target: {fileID: 4080540918116648, guid: 8f467e0f0bc97d54e81a87f7b532ed9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2556,7 +2568,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.59184766, g: 0.7169812, b: 0.71421874, a: 1}
   m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30

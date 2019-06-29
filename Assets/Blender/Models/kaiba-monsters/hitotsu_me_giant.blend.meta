@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21e545294a76b7b4da4bac6f696288a6
+guid: 46158b0c2a28c7740978442fc77b1c99
 ModelImporter:
   serializedVersion: 27
   internalIDToNameTable:
@@ -22,18 +22,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: armor__Untitled
-    second: {fileID: 2100000, guid: 34404f4c75992884297a4f9494554795, type: 2}
+      name: Material__body_diffuse
+    second: {fileID: 2100000, guid: 83ecbfa4d0456f24cb6d89096c68b29f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: body__Untitled
-    second: {fileID: 2100000, guid: 40f394ac12561b942b422092455c5f9d, type: 2}
+      name: None__eye_diffuse
+    second: {fileID: 2100000, guid: b8762d1296108504a8a54afc88d6de24, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: cape__Untitled
-    second: {fileID: 2100000, guid: 35a571765a6a0114094186e7b4883969, type: 2}
+      name: None__teeth_diffuse
+    second: {fileID: 2100000, guid: e872683d43080c745bedb561af4b45c0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,11 +62,40 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      internalID: 1989289236423521904
+      firstFrame: -1
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
       name: attack
       takeName: attack
       internalID: -6239216113759591374
       firstFrame: 0
-      lastFrame: 74
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -86,7 +115,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.60146064
+      - time: 0.5385288
         functionName: targetHitCallback
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -102,7 +131,7 @@ ModelImporter:
       takeName: death
       internalID: -6758483313513240000
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -122,7 +151,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.9853728
+      - time: 0.99779344
         functionName: deathCallback
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -138,7 +167,7 @@ ModelImporter:
       takeName: idle
       internalID: -5252816984213320552
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 51
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
