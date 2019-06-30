@@ -1471,6 +1471,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6939179185230933261, guid: fb912ede859e5bb418ae1afdca785bbe,
         type: 3}
+    - target: {fileID: 114369135389954138, guid: 8f467e0f0bc97d54e81a87f7b532ed9a,
+        type: 3}
+      propertyPath: bishopTwo
+      value: 
+      objectReference: {fileID: 6616287138980321016, guid: a800c9fc8e8382748ba416932fd01175,
+        type: 3}
+    - target: {fileID: 114369135389954138, guid: 8f467e0f0bc97d54e81a87f7b532ed9a,
+        type: 3}
+      propertyPath: rookTwo
+      value: 
+      objectReference: {fileID: 1560439842906574198, guid: d6fa50482375b5e4095ec622dfaa357c,
+        type: 3}
     - target: {fileID: 4080540918116648, guid: 8f467e0f0bc97d54e81a87f7b532ed9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
