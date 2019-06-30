@@ -24,7 +24,12 @@ public class YugiohChessLobbyManager : NetworkLobbyManager {
 		return lobbyPlayer;
 	}
 
-	public override bool OnLobbyServerSceneLoadedForPlayer (GameObject lobbyPlayer, GameObject gamePlayer)
+    private void Update()
+    {
+        Debug.Log(networkPort);
+    }
+
+    public override bool OnLobbyServerSceneLoadedForPlayer (GameObject lobbyPlayer, GameObject gamePlayer)
 	{
 		var lobby = lobbyPlayer.GetComponent<LobbyPlayer> ();
 		var player = gamePlayer.GetComponent<Player> ();
