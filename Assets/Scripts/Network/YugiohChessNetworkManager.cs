@@ -19,4 +19,19 @@ public class YugiohChessNetworkManager : NetworkManager {
 		lastPlayerNumber += 1;
 	}
 
+    // Start the game as a host
+    public void StartAsHost()
+    {
+        StartHost();
+    }
+
+    // Connect to the game
+    public void ConnectToGame()
+    {
+        string ipAddressString = UIControllerStartingScreen.instance.IPAddressInputField.text;
+        networkAddress = ipAddressString;
+
+        StartClient();
+    }
+
 }

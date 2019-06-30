@@ -990,7 +990,7 @@ MonoBehaviour:
   cardFace: {fileID: 0}
   currentTarget: {fileID: 0}
   moveSpeed: 1.5
-  attackDistance: 5
+  attackDistance: 4
   canCastle: 0
   pieceClicked:
     m_PersistentCalls:
