@@ -7,9 +7,11 @@ public class PieceGenerator : MonoBehaviour {
 	public static PieceGenerator singleton;
 
 	public PieceOptions yugiPieces;
+    public PieceOptions kaibaPieces;
 
 	public enum Character{
-		YUGI
+		YUGI,
+        KAIBA
 	}
 
 	private Dictionary<Character, PieceOptions> characterPieces;
@@ -27,6 +29,7 @@ public class PieceGenerator : MonoBehaviour {
 	void Awake(){
 		characterPieces = new Dictionary<Character, PieceOptions> ();
 		characterPieces.Add (Character.YUGI, yugiPieces);
+        characterPieces.Add(Character.KAIBA, kaibaPieces);
 
 		singleton = this;
 	}

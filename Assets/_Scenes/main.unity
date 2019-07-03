@@ -250,6 +250,15 @@ MonoBehaviour:
     knight: {fileID: 114706606303313172, guid: 82cf98b693f283849aacaa63ddc5816c, type: 3}
     queen: {fileID: 114073252870225694, guid: fe760863755c98d40b287d05ac28e6e2, type: 3}
     king: {fileID: 114101717398338480, guid: d649fb5846974d34aa28c84b2a39006f, type: 3}
+  kaibaPieces:
+    pawn: {fileID: 2881672188149896838, guid: 0e84d09f69f945a4da92e799ccfcdffc, type: 3}
+    rook: {fileID: 1560439842906574198, guid: d6fa50482375b5e4095ec622dfaa357c, type: 3}
+    bishop: {fileID: 6616287138980321016, guid: a800c9fc8e8382748ba416932fd01175,
+      type: 3}
+    knight: {fileID: 6939179185230933261, guid: fb912ede859e5bb418ae1afdca785bbe,
+      type: 3}
+    queen: {fileID: 6297710685235237272, guid: f01fc1902a2275b46993425039951611, type: 3}
+    king: {fileID: 3442997720420494215, guid: 8d76fcef7e030ea43942240fa1c55261, type: 3}
 --- !u!1 &45407514
 GameObject:
   m_ObjectHideFlags: 0

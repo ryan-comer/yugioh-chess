@@ -57,7 +57,9 @@ public class Player : NetworkBehaviour {
 	[ClientRpc]
 	public void RpcPawnPromotion(int pawnSlotIndex, ChessPiece.PieceType pieceType){
 		ChessPiece pawn = GameController.singleton.gameBoard.chessSlots [pawnSlotIndex].currentPiece;	// Pawn to promote
-		ChessPiece newPiece = PieceGenerator.singleton.GeneratePiece(PieceGenerator.Character.YUGI, pieceType);
+
+        PieceGenerator.Character character = (pawn.owner == 0) ? PieceGenerator.Character.YUGI : PieceGenerator.Character.KAIBA;
+		ChessPiece newPiece = PieceGenerator.singleton.GeneratePiece(character, pieceType);
 
 		// Instantiate the new piece
 		ChessBoard chessBoard = GameController.singleton.gameBoard;

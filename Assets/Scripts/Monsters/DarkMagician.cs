@@ -32,7 +32,16 @@ public class DarkMagician : MonoBehaviour {
 		energyWave.transform.localPosition = Vector3.zero;
 		energyWave.transform.LookAt (GetComponent<ChessPiece> ().currentTarget.GetComponentInChildren<Renderer>().bounds.center);
 
-		Destroy (energyWave, 3f);
+        StartCoroutine(StopEnergyWave(energyWave.transform.GetChild(0).GetComponent<ParticleSystem>()));
+
+		Destroy (energyWave, 10f);
 	}
+
+    private IEnumerator StopEnergyWave(ParticleSystem energyWave)
+    {
+        yield return new WaitForSeconds(3f);
+
+        energyWave.Stop();
+    }
 
 }

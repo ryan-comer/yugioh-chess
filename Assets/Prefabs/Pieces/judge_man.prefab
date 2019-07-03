@@ -2533,7 +2533,7 @@ MonoBehaviour:
   owner: 0
   currentX: 0
   currentY: 0
-  cardFace: {fileID: 0}
+  cardFace: {fileID: 21300000, guid: ef6ef7aa44832e14e977072fdc604f1c, type: 3}
   currentTarget: {fileID: 0}
   moveSpeed: 1.5
   attackDistance: 2.5

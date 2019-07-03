@@ -25,7 +25,16 @@ public class BlueEyesWhiteDragon : MonoBehaviour
         energyWave.transform.localPosition = Vector3.zero;
         energyWave.transform.LookAt(GetComponent<ChessPiece>().currentTarget.GetComponentInChildren<Renderer>().bounds.center);
 
-        Destroy(energyWave, 2f);
+        StartCoroutine(StopEnergyWave(energyWave.GetComponent<ParticleSystem>()));
+
+        Destroy(energyWave, 10f);
+    }
+
+    private IEnumerator StopEnergyWave(ParticleSystem energyWave)
+    {
+        yield return new WaitForSeconds(2.2f);
+
+        energyWave.Stop();
     }
 
 }

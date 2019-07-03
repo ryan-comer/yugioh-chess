@@ -987,10 +987,10 @@ MonoBehaviour:
   owner: 0
   currentX: 0
   currentY: 0
-  cardFace: {fileID: 0}
+  cardFace: {fileID: 21300000, guid: 3f5d9e8af0de4ce4a9587b8babc89420, type: 3}
   currentTarget: {fileID: 0}
   moveSpeed: 1.5
-  attackDistance: 4
+  attackDistance: 3.5
   canCastle: 0
   pieceClicked:
     m_PersistentCalls:
